@@ -1,0 +1,61 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 1rem 8rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px black;
+
+  .largeDesc {
+    margin: 1rem auto;
+    font-weight: 700;
+    font-size: xx-large;
+  }
+
+  .winDesc {
+    color: white;
+  }
+
+  input[type="text"] {
+    margin: 1rem auto 1rem;
+    padding: 0.5rem 2rem;
+    box-shadow: 1px 1px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .invalidGameIDDesc {
+    color: red;
+  }
+  button {
+    margin: 15px 10px 10px;
+  }
+  button:hover {
+    background-color: white;
+    color: black;
+    outline: 2px solid black;
+  }
+}
+
+.playerWins {
+  background-color: midnightblue;
+}
+
+.cpuWins {
+  background-color: maroon;
+}

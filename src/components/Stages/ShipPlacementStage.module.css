@@ -1,0 +1,45 @@
+.gridContainer {
+  margin: 1.5rem 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  .boardGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+
+  p {
+    padding: 0 2.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+.startBattleButton {
+  margin: 2rem auto;
+  padding: 0.7rem 2.5rem;
+  display: block;
+  font-size: 1.2rem;
+  background-color: dimgrey;
+  color: grey;
+  cursor: default;
+}
+
+.isEnabled {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.isEnabled:hover {
+  color: white;
+  background-color: red;
+}

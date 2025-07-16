@@ -1,0 +1,26 @@
+.shipButtonContainer {
+  display: grid;
+  margin: 0 6rem;
+
+  .shipButton {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 5%;
+    background-color: darkblue;
+  }
+  .shipButton:hover {
+    background-color: mediumblue;
+  }
+  .shipButton:focus {
+    background-color: darkslateblue;
+  }
+
+  .isSelected {
+    background-color: darkslateblue;
+  }
+
+  .isPlaced {
+    background-color: black;
+    cursor: default;
+  }
+}

@@ -1,0 +1,96 @@
+.board {
+  border: 7px solid;
+  color: midnightblue;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  height: 40px;
+  width: 40px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0;
+  background-color: snow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: cell;
+  transition: background-color 0.15s;
+  padding: 0;
+  margin: 0;
+}
+
+.playerBoard {
+  border-color: darkblue;
+
+  .isPreviewed {
+    background-color: bisque;
+  }
+
+  .isInvalid {
+    background-color: red;
+    cursor: not-allowed;
+  }
+}
+
+.cpuBoard {
+  border-color: maroon;
+
+  .isClicked {
+    cursor: not-allowed;
+  }
+
+  .unhitShips {
+    background-color: firebrick;
+  }
+  .unhitShips::after {
+    content: "";
+    background: url("../../assets/ship-unhit-white-exclamation-mark.svg") no-repeat center;
+    background-size: contain;
+    width: 75%;
+    height: 75%;
+  }
+}
+
+.isPlaced {
+  background-color: royalblue;
+}
+
+.isEmpty:hover {
+  background-color: bisque;
+}
+
+.isHit {
+  background-color: firebrick;
+}
+
+.isHit::after {
+  content: "";
+  background: url("../../assets/ship-hit-fire.svg") no-repeat center;
+  background-size: contain;
+  width: 80%;
+  height: 80%;
+}
+
+.isMiss {
+  background-color: grey;
+}
+
+.isDestroyed {
+  background-color: black;
+}
+
+.isDestroyed::after {
+  content: "";
+  background: url("../../assets/ship-destroyed-skull.svg") no-repeat center;
+  background-size: contain;
+  width: 70%;
+  height: 70%;
+}
+
+.endGame {
+  cursor: not-allowed;
+}

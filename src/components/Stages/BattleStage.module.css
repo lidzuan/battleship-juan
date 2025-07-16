@@ -1,0 +1,65 @@
+.buttonsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: fixed;
+  margin: 1.5rem 0;
+
+  button {
+    margin: 10px 30px;
+  }
+
+  .saveButton:hover {
+    background-color: darkblue;
+  }
+
+  .homeButton:hover {
+    background-color: maroon;
+  }
+}
+
+.boards {
+  margin: 1.5rem 10rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.boardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding-bottom: 2rem;
+  transition: background-color 0.1s;
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+.playerTurn {
+  background-color: midnightblue;
+  color: white;
+}
+
+.cpuTurn {
+  background-color: maroon;
+  color: white;
+}
+
+.gameStatusDescription {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 30% 0;
+  padding: 0.8rem;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px black;
+  transition: background-color 0.1s;
+
+  p {
+    color: white;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+}
