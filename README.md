@@ -19,7 +19,7 @@ Beyond gameplay, this project served as a case study for exploring algorithm eff
 - CPU ship placement logic
 - Hit detection and game loop logic
 
-These parts were analysed and documented using **loop complexity** and **Big-O notation**.
+These parts were analysed and documented using loop complexity and Big-O notation.
 
 > *🎤 [Click here](https://drive.google.com/file/d/1jqxzH47070R_UiYmtC8SE9GW4tdtesER/view?usp=sharing) to read my full practicum report (PDF).*
 
@@ -57,6 +57,7 @@ npm run dev
 
 ## 🔐 Notes
 - The original project supported save/load functionality via an internal backend API, but this server URL has been removed from the public version due to security and privacy concerns.
+- The original project used GitHub Actions for deployment, but workflow files have been removed in this version.
 - This project does not include responsive web design or accessibility features. It was developed as a scoped internship deliverable, focusing primarily on logic and front-end functionality.
 - Sensitive configuration or environment files have been excluded from this repository.
 
